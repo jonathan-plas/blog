@@ -8,7 +8,7 @@
                         </h1>
                         @foreach ($post->tags as $tag )
                             <a class="mr-3 ml-3 uppercase text-sm inline-block bg-{{$tag->color}}-500 font-bold rounded-full px-3 py-2 " 
-                            href=" {{route('post.tag',$post)}}"> {{$tag->name}}</a>
+                            href=" {{route('posts.tag',$tag)}}"> {{$tag->name}}</a>
                         @endforeach
                     </div>
                     <div class="font-bold text-xl">
